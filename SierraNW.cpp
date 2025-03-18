@@ -2,18 +2,27 @@
 #include <utility>
 #include <limits.h>
 #include <fstream>
+#include <windows.h>
 #include "SNTypes.h"
 #include "SIERRANWAPI.h"
 
 
 int InitializeDLL(char* GpServerIp, long GpInPort, long GpOutPort) {
-    // Add your implementation here
+    
+	
+	HWND hWnd = GetActiveWindow();
+	int result = MessageBoxW(hWnd, L"THE BEAST called InitializeDLL", L"DLL Message", MB_OK);
+
+
     return 1; // Placeholder return value
 }
 
 int InitializeSIGS(char *GpServerIp, long GpPort, HWND MyMainWnd, long MyUDPPort) {
-	return 1;
+	int result = MessageBoxW(MyMainWnd, L"THE BEAST called InitializeSIGS", L"DLL Message", MB_OK);
+return 1;
+
 }
+
 
 // Implementation of CloseDLL
 int CloseDLL(void) {
@@ -35,8 +44,20 @@ int SuppressMsgBox(void) {
 
 // Implementation of CheckGameConnectStatus
 int CheckGameConnectStatus(void) {
+
+	HWND hWnd = GetActiveWindow();
+	int result = MessageBoxW(hWnd, L"THE BEAST called Check Game Status", L"DLL Message", MB_OKCANCEL);
+	if (result == IDOK)
+	{
+		return 0; // TRUE
+	}
+	else
+	{
+		return -1; // FALSE
+	}
+
     // Add your implementation here
-    return 0; // Placeholder return value
+// Placeholder return value
 }
 
 // Implementation of WasGameRunning
@@ -252,7 +273,26 @@ void ShowGatheringPlace(void) {
     // Add your implementation here
 }
 
-// Implementation of ToggleCommExit
-void ToggleCommExit(int DoIt) {
+// Implementation of ShowGatheringPlace
+void HideGameChat(void) {
     // Add your implementation here
+}
+
+int PingTime(PING_METHOD PingType, int PlayerIndex) {
+	return 0;
+}
+
+HWND GetGatheringPlaceHwnd(void)
+{
+	return NULL;
+}
+
+HWND GetGameChatHwnd(void)
+{
+	return NULL;
+}
+
+int GetServerPopulation(SIGS_SERVER_POPULATION_ET etServer)
+{
+	return 1;
 }
