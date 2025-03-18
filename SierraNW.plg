@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SierraNW - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\DGODDA~1.DAW\AppData\Local\Temp\RSP6C9B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SIERRANW_EXPORTS" /Fp"Debug/SierraNW.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp"
+]
+Creating command line "cl.exe @C:\Users\DGODDA~1.DAW\AppData\Local\Temp\RSP6C9B.tmp" 
+Creating temporary file "C:\Users\DGODDA~1.DAW\AppData\Local\Temp\RSP6C9C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/SierraNW.pdb" /debug /machine:I386 /out:"Debug/SierraNW.dll" /implib:"Debug/SierraNW.lib" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\dllmain.obj
+.\Debug\SierraNW.obj
+.\Debug\Resource.res
+]
+Creating command line "link.exe @C:\Users\DGODDA~1.DAW\AppData\Local\Temp\RSP6C9C.tmp"
+<h3>Output Window</h3>
+Compiling...
+SierraNW.cpp
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(9) : warning C4273: 'InitializeDLL' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(14) : warning C4273: 'InitializeSIGS' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(19) : warning C4273: 'CloseDLL' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(25) : warning C4273: 'GameClose' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(31) : warning C4273: 'SuppressMsgBox' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(37) : warning C4273: 'CheckGameConnectStatus' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(43) : warning C4273: 'WasGameRunning' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(49) : warning C4273: 'SetGameState' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(54) : warning C4273: 'GetMyPlayerNumber' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(60) : warning C4273: 'GetNumberOfPlayers' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(66) : warning C4273: 'GetPlayerXName' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(72) : warning C4273: 'GetNewPlayersIndex' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(78) : warning C4273: 'ActivateNewPlayerX' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(84) : warning C4273: 'CheckPlayerConnectStatus' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(96) : warning C4273: 'SendTCPMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(102) : warning C4273: 'WaitForTCPMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(108) : warning C4273: 'PeekForTCPMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(114) : warning C4273: 'RecvTCPMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(120) : warning C4273: 'SendTCPPointMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(126) : warning C4273: 'CheckForAnyTCPMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(132) : warning C4273: 'SendUDPMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(138) : warning C4273: 'RecvUDPMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(144) : warning C4273: 'SendUDPPointMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(150) : warning C4273: 'CheckForAnyUDPMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(156) : warning C4273: 'GetGameOption' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(162) : warning C4273: 'InitializeCustomServer' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(168) : warning C4273: 'SendCustomServerMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(174) : warning C4273: 'FreeCustomServerMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(180) : warning C4273: 'TellMeGameMessReceived' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(186) : warning C4273: 'FreeGameMessageBuffer' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(192) : warning C4273: 'TellMeChatMessReceived' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(198) : warning C4273: 'SendChatMessage' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(204) : warning C4273: 'TellMeGameConnected' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(210) : warning C4273: 'TellMePlayerLeftGame' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(216) : warning C4273: 'TellMeUserDisconnected' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(222) : warning C4273: 'TellMePlayerJoined' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(228) : warning C4273: 'TellMeUserPublicInfo' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(234) : warning C4273: 'SendUserComplaint' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(240) : warning C4273: 'TellMeSpecialChatReceived' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(246) : warning C4273: 'HideGatheringPlace' : inconsistent dll linkage.  dllexport assumed.
+C:\Users\dgoddard.DAWAGO\Desktop\SierraNW\SierraNW.cpp(251) : warning C4273: 'ShowGatheringPlace' : inconsistent dll linkage.  dllexport assumed.
+Linking...
+LINK : LNK6004: Debug/SierraNW.dll not found or not built by the last incremental link; performing full link
+   Creating library Debug/SierraNW.lib and object Debug/SierraNW.exp
+
+
+
+<h3>Results</h3>
+SierraNW.dll - 0 error(s), 41 warning(s)
+</pre>
+</body>
+</html>
