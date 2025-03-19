@@ -252,6 +252,7 @@ typedef void (SIGSCALL *NEW_PLAYER_PROC)(void);
 //typedef for TellMeUserPublicInfo callback function
 typedef void (SIGSCALL *PUBLIC_INFO_PROC)(struct tPublicInfo *PublicInfo);
 
+
 //a pointer to this structure will be the third parameter when a message is
 //posted (WPARAM) and the structure will be the second parameter when a callback
 // is used

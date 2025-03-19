@@ -6,21 +6,28 @@
 #include "SNTypes.h"
 #include "SIERRANWAPI.h"
 
+HWND SIGSwndw;
+
 
 int InitializeDLL(char* GpServerIp, long GpInPort, long GpOutPort) {
     
 	
 	HWND hWnd = GetActiveWindow();
+	SIGSwndw = hWnd;
 	int result = MessageBoxW(hWnd, L"THE BEAST called InitializeDLL", L"DLL Message", MB_OK);
 
 
     return 1; // Placeholder return value
 }
 
-int InitializeSIGS(char *GpServerIp, long GpPort, HWND MyMainWnd, long MyUDPPort) {
-	int result = MessageBoxW(MyMainWnd, L"THE BEAST called InitializeSIGS", L"DLL Message", MB_OK);
-return 1;
+// Add this line to declare the SIGSwndw variable
 
+int InitializeSIGS(char *GpServerIp, long GpPort, HWND MyMainWnd, long MyUDPPort) {
+    int result = MessageBoxW(MyMainWnd, L"THE BEAST called InitializeSIGS", L"DLL Message", MB_OK);
+
+    SIGSwndw = MyMainWnd;
+
+    return 1;
 }
 
 
@@ -45,8 +52,8 @@ int SuppressMsgBox(void) {
 // Implementation of CheckGameConnectStatus
 int CheckGameConnectStatus(void) {
 
-	HWND hWnd = GetActiveWindow();
-	int result = MessageBoxW(hWnd, L"THE BEAST called Check Game Status", L"DLL Message", MB_OKCANCEL);
+
+	int result = MessageBoxW(SIGSwndw, L"THE BEAST called Check Game Status", L"DLL Message", MB_OKCANCEL);
 	if (result == IDOK)
 	{
 		return 0; // TRUE
@@ -173,6 +180,11 @@ int CheckForAnyUDPMessage(void) {
     return 0; // Placeholder return value
 }
 
+int GetUDPPlayerData(int PlayerIndex, sUDPPlayer* PlayerData)
+{
+	return 1;
+}
+
 // Implementation of GetGameOption
 int GetGameOption(char *Opt, char *Val) {
     // Add your implementation here
@@ -207,6 +219,11 @@ int TellMeGameMessReceived(NOTIFY_METHOD notifyType, MESS_RECEIVED_PROC my_funct
 int FreeGameMessageBuffer(void) {
     // Add your implementation here
     return 0; // Placeholder return value
+}
+
+int TellMeUDPReceived(NOTIFY_METHOD notifyType, MESS_RECEIVED_PROC my_function, HWND my_window, UINT messageID, HANDLE my_event)
+{
+	return 0;
 }
 
 // Implementation of TellMeChatMessReceived
@@ -272,6 +289,13 @@ void HideGatheringPlace(void) {
 void ShowGatheringPlace(void) {
     // Add your implementation here
 }
+
+// Implementation of ShowGatheringPlace
+void ShowGameChat(void) {
+    // Add your implementation here
+}
+
+
 
 // Implementation of ShowGatheringPlace
 void HideGameChat(void) {
